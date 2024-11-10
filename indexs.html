@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown timer</title>
+    <link rel="stylesheet" href="./indexs.css">
+</head>
+<body>
+    <div class="main">
+        <span class="title">
+            Countdown timer
+        </span>
+        <div class="timer">
+            <span class="time">
+                Hours 
+            </span>
+            <span class="time">
+                Minutes
+            </span>
+            <span class="time">
+                Seconds
+            </span>
+        </div>
+        <div.inputs>
+            <input class="input" 
+            type="number" 
+            placeholder="00" 
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,maxLength)">:
+            <input class="input" 
+            type="number" 
+            placeholder="00" 
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,this.maxLength)">:
+            <input class="input" 
+            type="number" 
+            placeholder="00" 
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,this.maxLength)">  
+        </div>
+       <br>
+        <div class="btn">
+            <button class="start">start</button>
+            <button class="stop">stop</button>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <div style="height: 80px;">
+
+    </div>
+    
+    <script src="indexs.js"></script>
+</body>
+</html>
