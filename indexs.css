@@ -1,3 +1,7 @@
+body {
+  background-color:rgb(92, 92, 92);
+  font-family: Arial, sans-serif;
+
 .main{
     display: flex;
     flex-direction: column;
@@ -6,9 +10,27 @@
     padding-top: 150px;
 }
 .title{
-    font-family: sans-serif;
+    color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     text-align: center;
+    padding: 5px;
+    text-shadow:
+        2px 0px 3px black,  /* Uniform shadow around the text */
+        2px 0px 5px black,  /* Larger blur for more softness */
+        2px 0px 8px black,
+        2px 0px 10px black;  /* Wider vertical shadow */
+}
+
+.title:hover{
+    font-size: 26px;
+    color: black;
+    text-shadow:
+        2px  0px 3px coral, /* Uniform shadow around the text */
+        2px 0px 5px coral,  /* Larger blur for more softness */
+        2px 0px 8px coral,
+        2px 0px 10px coral;
+    padding-bottom: -5px;
 }
 .timer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -17,9 +39,17 @@
     text-align: center;
 
 }
+
 .time{
+    font-size: small;
     padding: 5px;
     display:flex;
+}
+
+.time:hover{
+    color: rgb(70, 0, 175);
+    font-size: 14px;
+    cursor: pointer;
 }
 .input{
     border: none;
@@ -27,8 +57,16 @@
     justify-content: space-between;
     text-align: center;
     outline: none;
+    background-color: rgb(92, 92, 92);
     
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
 .btn{
     display: flex;
     flex-direction: row;
@@ -46,23 +84,29 @@
     background-color: rgb(49, 78, 91);
     border: none;
     border-radius: 4px;
-    font-family: monospace;
+    font-family:initial;
     color: white;
     display: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .start{
     background-color: green;
     border: none;
     border-radius: 4px;
-    font-family: monospace;
+    font-family: initial;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .reset{
     background-color: red;
     border: none;
     border-radius: 4px;
-    font-family: monospace;
+    font-family: initial;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .POP{
     display: flex;
